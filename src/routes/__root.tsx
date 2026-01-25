@@ -4,6 +4,10 @@ import { TanStackRouterDevtools } from "@tanstack/react-router-devtools"
 
 const RootLayout = () => (
     <>
+        <main className="flex flex-1 flex-col">
+            <Outlet />
+        </main>
+        <hr />
         <div className="p-2 flex gap-2">
             <Link to="/" className="[&.active]:font-bold">
                 Home
@@ -12,10 +16,6 @@ const RootLayout = () => (
                 Workouts
             </Link>
         </div>
-        <hr />
-        <main className="flex flex-1 items-center justify-center">
-            <Outlet />
-        </main>
         <TanStackDevtools
             plugins={[
                 {
