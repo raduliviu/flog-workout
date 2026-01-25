@@ -8,13 +8,13 @@ export const Route = createFileRoute("/workouts/")({
 
 function Workouts() {
     return (
-        <div className="items-center justify-center flex flex-col p-4 gap-4">
+        <>
             <button className="btn" onClick={() => console.log("Creating workout...")}>
                 + Create Workout
             </button>
 
             {dummyWorkouts.map((workout) => (
-                <div key={workout.id} className="card w-[80dvw] bg-base-200 card-sm shadow-sm">
+                <div key={workout.id} className="card w-full bg-base-200 card-sm shadow-sm">
                     <div className="card-body">
                         <h2 className="card-title">{workout.name}</h2>
                         <p>{workout.description}</p>
@@ -34,6 +34,6 @@ function Workouts() {
                     </div>
                 </div>
             ))}
-        </div>
+        </>
     )
 }

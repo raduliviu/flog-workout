@@ -4,11 +4,11 @@ import { TanStackRouterDevtools } from "@tanstack/react-router-devtools"
 
 const RootLayout = () => (
     <>
-        <main className="flex flex-1 flex-col">
+        <main className="flex flex-1 flex-col items-center px-8 py-6 gap-4">
             <Outlet />
         </main>
         <hr />
-        <div className="p-2 flex gap-2">
+        <div className="px-8 py-2 flex items-center justify-center gap-2">
             <Link to="/" className="[&.active]:font-bold">
                 Home
             </Link>{" "}
