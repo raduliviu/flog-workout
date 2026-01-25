@@ -1,8 +1,14 @@
 @import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/inter/wght-italic.css";
 @plugin "daisyui";
 
+@theme {
+    --font-sans: "Inter Variable", sans-serif;
+}
+
 :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: var(--font-sans);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
